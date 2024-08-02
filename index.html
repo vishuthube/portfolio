@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Thube | Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFA726, #FF7043); /* Orange gradient background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeIn 1s ease;
+        }
+        header h1 {
+            margin: 0;
+            color: white; /* White text color */
+            font-size: 3em;
+        }
+        header p {
+            margin: 5px 0;
+            color: white; /* White text color */
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-info p {
+            color: white;
+            margin: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info p:not(:last-child):after {
+            content: "|";
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+        }
+        .contact-info i {
+            color: black; /* Orange color */
+            margin-right: 10px;
+        }
+        .card {
+            background: white; /* White card background */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease;
+        }
+        .card h2 {
+            color: #FFA726; /* Orange color */
+            text-align: center;
+            margin-top: 0;
+        }
+        .skills li, .projects li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: linear-gradient(135deg, #FFA726, #FF7043); /* Same gradient as background */
+            color: white;
+            animation: slideInUp 1s ease;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .contact-info p {
+                margin: 5px 5px;
+            }
+            .contact-info p:not(:last-child):after {
+                display: none;
+            }
+            .card {
+                padding: 15px;
+            }
+            footer {
+                padding: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vishal Thube</h1>
+            <p>Detail-oriented Manual Tester with [X] years of experience in ensuring software quality through rigorous manual testing practices. Proficient in developing and executing detailed test cases, performing sanity testing to quickly validate critical functionalities, and identifying defects early in the development cycle.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:vthube01@gmail.com">vthube01@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:7028251617">7028251617</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vishal-thube" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </header>
+        <div class="card">
+            <h2>Professional Experience 💼</h2>
+            <p><strong>Analyst-Managed Technology Services</strong></p>
+            <p>Netscribes India (Pvt) Limited, Mumbai, India</p>
+            <p>December 2022 – Present</p>
+            <ul>
+                <li>Provided tailored technology solutions to meet client-specific needs, improving overall efficiency and performance.</li>
+                <li>Proven ability to create efficient, scalable solutions. Collaborate with cross-functional teams, analyze requirements, and deliver high-quality code.</li>
+                <li>Created detailed test cases based on functional and non-functional requirements, ensuring all scenarios were thoroughly tested.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Education 🎓</h2>
+            <p><strong>Bachelor of Information Technology</strong></p>
+            <p>Mumbai University</p>
+            <p>2019 – 2022</p>
+            <p><em>7.30 SCGPA</em></p>
+            <br>
+            <p><strong>HSC</strong></p>
+            <p>Arts & Science College</p>
+            <p>2017 – 2019</p>
+            <p><em>64%</em></p>
+            <br>
+            <p><strong>SSC</strong></p>
+            <p>New English School, Ahemdnagar, India</p>
+            <p>2016 – 2017</p>
+            <p><em>81%</em></p>
+        </div>
+        <div class="card">
+            <h2>Skills 🛠️</h2>
+            <ul class="skills">
+                <li>Python</li>
+                <li>C#</li>
+                <li>.NET</li>
+                <li>PHP</li>
+                <li>HTML/CSS</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Projects 📚</h2>
+            <ul class="projects">
+                <li><strong>Dinosaur Endless Running Game</strong></li>
+                <p>This game for just entertainment purpose it is single player game, the point get increased 
+                    based On number of crossed cactus, the dinosaur is touch the cactus the game is over.</p>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Declaration: I solemnly declare that the information in this resume is true to the best of my knowledge and belief. Priya Gaud, Mumbai</p>
+    </footer>
+</body>
+</html>
